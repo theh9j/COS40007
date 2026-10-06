@@ -1,0 +1,46 @@
+{
+  "source_doi": "10.24432/C5PK67",
+  "source_rows": 1030,
+  "prepared_rows": 1005,
+  "removed_exact_duplicates": 25,
+  "predictors": [
+    "cement",
+    "slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age"
+  ],
+  "units": {
+    "cement": "kg/m^3",
+    "slag": "kg/m^3",
+    "fly_ash": "kg/m^3",
+    "water": "kg/m^3",
+    "superplasticizer": "kg/m^3",
+    "coarse_aggregate": "kg/m^3",
+    "fine_aggregate": "kg/m^3",
+    "age": "days",
+    "strength": "MPa"
+  },
+  "continuous_target": "strength",
+  "classification_target": "strength_class",
+  "class_labels": [
+    "Lower",
+    "Lower-middle",
+    "Upper-middle",
+    "Higher"
+  ],
+  "descriptive_class_edges_MPa": [
+    2.331807832,
+    23.523542168,
+    33.79811352,
+    44.868340176000004,
+    82.5992248
+  ],
+  "class_boundary_convention": "right-closed; first interval includes minimum",
+  "class_edges_scope": "full cleaned dataset EDA; refit on training for evaluation",
+  "outlier_policy": "retain all IQR flags; no confirmed invalid measurements",
+  "source_sha256": "710076c66b9ca3f8050e7942f3dcbdbe04013534daeb0077ffd3079a52d8e0c4"
+}
