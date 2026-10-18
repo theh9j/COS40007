@@ -1,0 +1,9 @@
+feature,reason
+cement,Broad asymmetric binder distribution; median/IQR scaling
+slag,Zero-heavy optional ingredient; broad positive range
+fly_ash,Zero-heavy optional ingredient; non-Gaussian mixture
+water,"Near-symmetric, concentrated distribution; mean/SD scaling"
+superplasticizer,Many zeros and positive extremes; median/IQR scaling
+coarse_aggregate,Near-symmetric distribution; mean/SD scaling
+fine_aggregate,Approximately symmetric compared with age/admixtures
+age,Strong right tail and long curing ages; median/IQR scaling

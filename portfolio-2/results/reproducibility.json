@@ -1,0 +1,66 @@
+{
+  "author": "Pham Quang Minh",
+  "date": "2026-10-18",
+  "seed": 42,
+  "source_doi": "10.24432/C5PK67",
+  "source_sha256": "710076c66b9ca3f8050e7942f3dcbdbe04013534daeb0077ffd3079a52d8e0c4",
+  "raw_rows": 1030,
+  "clean_rows": 1005,
+  "duplicates_removed": 25,
+  "train_rows": 676,
+  "test_rows": 329,
+  "train_recipes": 299,
+  "test_recipes": 129,
+  "class_names": [
+    "Lower",
+    "Lower-middle",
+    "Upper-middle",
+    "Higher"
+  ],
+  "training_edges_MPa": [
+    23.23928106064097,
+    33.45421274036465,
+    44.34364894
+  ],
+  "class_rule": "(-inf,q25], (q25,q50], (q50,q75], (q75,inf)",
+  "target_CV": "Quartiles refitted within each fit, including inner and outer folds",
+  "best_tree_by_CV": "DT Domain",
+  "selected_SVM_by_CV": "SVM Tuned",
+  "selected_K": 11,
+  "K_features": [
+    "water",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "cement",
+    "superplasticizer",
+    "age",
+    "binder_total",
+    "water_binder_ratio",
+    "log_age",
+    "scm_fraction",
+    "maturity_ratio"
+  ],
+  "PCA_components": 7,
+  "PCA_variance": 0.969929156130408,
+  "tuned_parameters": {
+    "classifier__C": 100,
+    "classifier__gamma": 0.1
+  },
+  "K_parameters": {
+    "classifier__C": 10,
+    "classifier__gamma": 0.1,
+    "features__kbest__k": 11
+  },
+  "PCA_parameters": {
+    "classifier__C": 10,
+    "classifier__gamma": 0.1,
+    "features__pca__n_components": 0.95
+  },
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "student_id": "104999568"
+}

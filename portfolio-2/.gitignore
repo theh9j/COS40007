@@ -1,0 +1,9 @@
+.venv/
+.runtime/
+.cache/
+.kernels/
+.ipynb_checkpoints/
+__pycache__/
+tmp/
+tools/__pycache__/
+portfolio-2-submission.zip

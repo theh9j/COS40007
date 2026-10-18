@@ -1,0 +1,15 @@
+{
+  "best_tree": "DT Domain",
+  "tree_CV_F1": 0.6615618698063698,
+  "tree_test_F1": 0.7301478138260742,
+  "best_svm": "SVM Tuned",
+  "svm_CV_F1": 0.7467618247411665,
+  "svm_test_F1": 0.8063489912093871,
+  "svm_test_accuracy": 0.8085106382978723,
+  "svm_test_class_MAE": 0.20364741641337386,
+  "tuning_CV_delta": 0.03207991469641813,
+  "tuning_test_delta": 0.023150273446911007,
+  "scale_CV_delta": 0.30431484239614065,
+  "expanded_tree_delta": 0.07881921383055301,
+  "dummy_accuracy": 0.23404255319148937
+}
