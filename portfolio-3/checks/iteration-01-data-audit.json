@@ -1,0 +1,52 @@
+{
+  "iteration": 1,
+  "date": "2026-11-01",
+  "name": "Pham Quang Minh",
+  "student_id": "104999568",
+  "github": "https://github.com/theh9j/COS40007",
+  "route": "3d - tabular ANN",
+  "status": "Data verified; modelling not started",
+  "source_file": "portfolio-2/data/partitioned_concrete.csv",
+  "source_sha256": "e471719b523703f2d701a1193ee63f3d3c21d929fe727e5c4008a4abd80bc690",
+  "copied_sha256": "e471719b523703f2d701a1193ee63f3d3c21d929fe727e5c4008a4abd80bc690",
+  "dataset_doi": "10.24432/C5PK67",
+  "total_rows": 1005,
+  "predictors": [
+    "cement",
+    "slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age"
+  ],
+  "train_rows": 676,
+  "test_rows": 329,
+  "train_recipe_groups": 299,
+  "test_recipe_groups": 129,
+  "missing_values": 0,
+  "duplicate_source_rows": 0,
+  "duplicate_measurement_rows": 0,
+  "shared_train_test_recipes": 0,
+  "train_class_counts": {
+    "Lower": 169,
+    "Lower-middle": 169,
+    "Upper-middle": 169,
+    "Higher": 169
+  },
+  "test_class_counts": {
+    "Lower": 77,
+    "Lower-middle": 72,
+    "Upper-middle": 86,
+    "Higher": 94
+  },
+  "class_cutoffs_MPa": [
+    23.23928106064097,
+    33.45421274036465,
+    44.34364894
+  ],
+  "class_rule": "<=q25; (q25,q50]; (q50,q75]; >q75",
+  "label_check": "All class codes and names match saved Portfolio 2 boundaries",
+  "models_trained": 0
+}

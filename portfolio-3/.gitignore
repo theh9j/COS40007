@@ -1,0 +1,7 @@
+.venv/
+.runtime/
+.cache/
+.kernels/
+__pycache__/
+.ipynb_checkpoints/
+tmp/
