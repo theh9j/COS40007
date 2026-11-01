@@ -1,5 +1,44 @@
 # Progress
 
+## Iteration 2 - 1 November 2026
+
+**Completed**
+
+- Added and executed five notebook code cells for data preparation and the Random Forest.
+- Kept eight original inputs, existing class labels and the 676/329 recipe split.
+- Added StandardScaler inside the model pipeline; each CV fold learns its own scaler.
+- Trained a fixed baseline: 200 trees, minimum two records per leaf, seed 42.
+- Ran five-fold recipe-group CV and evaluated the separate test set.
+- Saved the model pipeline, results, test predictions, confusion matrix and CV assignments.
+- Added pinned requirements and a verification record for this checkpoint.
+
+**Results**
+
+| Measure | Result |
+| --- | ---: |
+| Test accuracy | 78.12% |
+| Test weighted F1 | 0.7805 |
+| Mean CV accuracy | 69.16% |
+| Mean CV weighted F1 | 0.6925 |
+| Training accuracy | 97.19% |
+
+Training performance is optimistic. This is one baseline, so no best-model claim is made.
+
+**Checks passed:** original data hash unchanged; no shared train/test or CV recipes;
+all scalers fitted only on their training rows; reloaded model predictions exactly
+match the saved model's predictions; each training record appears in one CV
+validation fold. The notebook completed without execution errors.
+
+**Next checkpoint:** add the scikit-learn MLP and compare both models using the same
+saved folds. ANN training and the final PDF remain pending.
+
+**AI assistance:** baseline code drafting, explanations and verification. No personal
+learning reflection was invented. The supplied brief's limits on AI use still apply.
+
+**Git:** changes left unstaged and uncommitted for the user. No push performed.
+
+---
+
 ## Iteration 1 - 1 November 2026
 
 **Completed**

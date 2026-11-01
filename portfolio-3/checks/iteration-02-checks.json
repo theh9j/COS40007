@@ -1,0 +1,83 @@
+{
+  "student_id": "104999568",
+  "name": "Pham Quang Minh",
+  "github": "https://github.com/theh9j/COS40007",
+  "iteration": 2,
+  "date": "2026-11-01",
+  "seed": 42,
+  "features": [
+    "cement",
+    "slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age"
+  ],
+  "class_names": [
+    "Lower",
+    "Lower-middle",
+    "Upper-middle",
+    "Higher"
+  ],
+  "class_cutoffs_MPa": [
+    23.23928106064097,
+    33.45421274036465,
+    44.34364894
+  ],
+  "label_policy": "Fixed class definition inherited from Portfolio 2",
+  "source_sha256": "e471719b523703f2d701a1193ee63f3d3c21d929fe727e5c4008a4abd80bc690",
+  "train_shape": [
+    676,
+    8
+  ],
+  "test_shape": [
+    329,
+    8
+  ],
+  "cv": "5-fold GroupKFold by recipe; seed 42; training partition only",
+  "cv_scalers_fit_on_fold_training_only": true,
+  "final_scaler_fit_on_training_only": true,
+  "shared_train_test_recipes": 0,
+  "shared_cv_recipes": 0,
+  "saved_model_predictions_match": true,
+  "model_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": null,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 200,
+    "n_jobs": 1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "metrics": {
+    "model": "Random Forest",
+    "train_accuracy": 0.9718934911242604,
+    "cv_accuracy_mean": 0.691629276360894,
+    "cv_accuracy_sd": 0.04910113173137877,
+    "cv_f1_weighted_mean": 0.692508496925304,
+    "cv_f1_weighted_sd": 0.04789018511454136,
+    "test_accuracy": 0.7811550151975684,
+    "test_f1_weighted": 0.780529697499423
+  },
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "ai_assistance": "Baseline code drafting, explanations and verification"
+}
