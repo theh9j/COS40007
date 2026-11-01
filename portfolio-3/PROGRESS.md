@@ -1,5 +1,41 @@
 # Progress
 
+## Iteration 3 - 1 November 2026
+
+**Completed**
+
+- Adapted the supplied Iris MLP example to the concrete classification task.
+- Added a scaled MLP with 100/50 hidden units, ReLU, Adam and up to 500 iterations.
+- Reused the same inputs, labels, test partition and five saved recipe folds.
+- Compared both models and saved the MLP pipeline, predictions and training loss.
+- Added a two-model accuracy chart, MLP confusion matrix and verification record.
+- Selected MLP as the traditional baseline by mean CV accuracy, before ANN comparison.
+
+| Model | Test accuracy | Test weighted F1 | Mean CV accuracy |
+| --- | ---: | ---: | ---: |
+| Random Forest | 78.12% | 0.7805 | 69.16% |
+| MLP | 82.07% | 0.8203 | 75.18% |
+
+**Limitation:** all five CV MLP fits and the final fit emitted convergence warnings
+at the fixed 500-iteration limit. The model produced valid predictions, but full
+optimisation is not established. Warnings and iteration counts are saved, not
+silently discarded. No settings were changed to improve the test score.
+
+**Checks:** training-only scaler means checked for every fit; saved model predictions
+match; source data and fold assignments unchanged; both comparison rows checked
+against predictions and CV results. All nine notebook code cells completed without
+execution errors. Random Forest metrics remain unchanged from iteration 2.
+
+**Next checkpoint:** prepare recipe-group ANN validation data and train the first
+Keras ANN. TensorFlow setup and the final report remain pending.
+
+**AI assistance:** adapting the supplied example, explanations, plots and verification.
+The personal learning reflection remains for the student to write.
+
+**Git:** nothing staged, committed or pushed; changes left for the user's review.
+
+---
+
 ## Iteration 2 - 1 November 2026
 
 **Completed**
