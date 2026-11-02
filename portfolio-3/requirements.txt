@@ -1,7 +1,10 @@
-# Verified checkpoints 2-3 environment: Python 3.12.
+# Verified checkpoints 2-4 environment: Python 3.12; ANN runs on CPU.
 numpy==2.5.3
 pandas==3.0.6
+scipy==1.18.1
 scikit-learn==1.9.1
 matplotlib==3.11.2
 ipykernel==7.4.0
-# TensorFlow/Keras will be added and verified at the ANN checkpoint.
+tensorflow==2.21.0
+keras==3.15.1
+h5py==3.14.0

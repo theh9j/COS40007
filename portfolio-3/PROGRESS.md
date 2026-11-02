@@ -1,5 +1,91 @@
 # Progress
 
+## Iteration 5 - 1 November 2026
+
+**Completed**
+
+- Ran the previously specified 50-epoch ANN variation from the same initial seed.
+- Kept the 513/163/329 split, scaler, layers, dropout, batch size and callbacks fixed.
+- Verified that all recorded metrics in the first ten epochs match the original run.
+- Selected epoch 50 and the extended ANN using validation loss, before test evaluation.
+- Saved the extended H5/Keras model, history, predictions, classification report and plots.
+- Updated the master results table and added the two-ANN comparison table.
+- Preserved earlier notebook outputs and model/result files; only new training was run.
+
+| Measure | 10-epoch ANN | 50-epoch ANN |
+| --- | ---: | ---: |
+| Test accuracy | 62.31% | 75.68% |
+| Test weighted F1 | 0.5830 | 0.7462 |
+| Validation accuracy | 60.12% | 72.39% |
+| Validation loss | 0.9078 | 0.6525 |
+| Test loss | 0.9325 | 0.6023 |
+| Selected epoch | 10 | 50 |
+
+All 50 epochs completed; early stopping did not end the run early. More training
+improved this ANN, but the MLP still has the highest observed test accuracy (82.07%).
+This is not a controlled architecture comparison: traditional models use more
+fitting records, and the MLP's convergence warnings remain recorded.
+
+**Checks:** matching first-ten-epoch history; original split, scaler and all prior
+model/prediction/history hashes unchanged; H5 reload reproduces predictions;
+history reload matches; saved probabilities and metrics checked independently.
+The five new notebook code cells executed successfully. Earlier cell outputs were
+preserved; restarting the kernel and running all cells reproduces the full workflow.
+
+**Next checkpoint:** concise PDF in the Portfolio 1 layout, final file checks and
+the student's own personal learning reflection. No more model runs are planned.
+
+**AI assistance:** controlled-experiment implementation, explanation, plots and checks.
+Personal learning answers have not been invented.
+
+**Git:** nothing staged, committed or pushed. Earlier uncommitted checkpoint-4
+changes remain alongside this checkpoint for the user's review.
+
+---
+
+## Iteration 4 - 1 November 2026
+
+**Completed**
+
+- Installed and verified TensorFlow 2.21.0 / Keras 3.15.1 in an ignored, separate runtime.
+- Kept the original 329 test records; split training recipes into 513 fitting rows
+  (239 recipes) and 163 validation rows (60 recipes), using seed 43.
+- Fitted a separate StandardScaler only on the 513 ANN fitting rows.
+- Built the specified 64/32/16 ReLU ANN, two dropout layers (0.2) and four-class softmax.
+- Trained 10 epochs with batch size 32, Adam 0.001 and validation-loss callbacks.
+- Selected epoch 10 by the lowest validation loss; no test-based model selection.
+- Saved H5/native Keras models, scaler, history, predictions, report and two figures.
+- Fixed the next experiment in advance: maximum 50 epochs, otherwise identical settings.
+
+| Measure | Result |
+| --- | ---: |
+| ANN test accuracy | 62.31% |
+| ANN test weighted F1 | 0.5830 |
+| ANN validation accuracy | 60.12% |
+| ANN test loss | 0.9325 |
+| Selected epoch / completed epochs | 10 / 10 |
+
+Training and validation losses improved overall; the short ANN run remains weaker
+than the MLP baseline. Validation is a separate split, not ANN five-fold CV. The
+ANN uses fewer fitting records because it reserves validation rows.
+
+**Checks:** original data/fold/prediction hashes and traditional baseline metrics
+remain unchanged. ANN fit/validation/test recipes are disjoint; scaler statistics
+use fitting rows only; H5 reload reproduces predictions; saved history matches;
+probabilities are finite and sum to one. All 15 code cells completed without an
+execution error. The displayed training curve uses dropout, while validation and
+the saved model's evaluation do not.
+
+**Next checkpoint:** run the pre-specified 50-epoch ANN variation, compare validation
+behaviour and saved model results. Final report and personal reflection remain pending.
+
+**AI assistance:** ANN example adaptation, validation design, explanations, figures
+and verification. No personal learning-reflection answers were invented.
+
+**Git:** no staging, commit or push. The new local runtime is ignored by Git.
+
+---
+
 ## Iteration 3 - 1 November 2026
 
 **Completed**

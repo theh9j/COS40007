@@ -1,0 +1,82 @@
+{
+  "iteration": 4,
+  "date": "2026-11-01",
+  "name": "Pham Quang Minh",
+  "student_id": "104999568",
+  "github": "https://github.com/theh9j/COS40007",
+  "source_sha256": "e471719b523703f2d701a1193ee63f3d3c21d929fe727e5c4008a4abd80bc690",
+  "features": [
+    "cement",
+    "slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age"
+  ],
+  "class_names": [
+    "Lower",
+    "Lower-middle",
+    "Upper-middle",
+    "Higher"
+  ],
+  "fit_rows": 513,
+  "validation_rows": 163,
+  "test_rows": 329,
+  "fit_recipe_groups": 239,
+  "validation_recipe_groups": 60,
+  "shared_recipes_across_partitions": 0,
+  "scaler_fit_on_ann_fitting_rows_only": true,
+  "architecture": [
+    64,
+    32,
+    16,
+    4
+  ],
+  "dropout": [
+    0.2,
+    0.2
+  ],
+  "parameter_count": 3252,
+  "batch_size": 32,
+  "max_epochs": 10,
+  "completed_epochs": 10,
+  "selected_epoch_by_validation_loss": 10,
+  "selection_used_test_results": false,
+  "metrics": {
+    "model": "ANN (10 epochs)",
+    "train_accuracy": 0.6101364493370056,
+    "test_accuracy": 0.6231003039513677,
+    "test_f1_weighted": 0.5829924209797083,
+    "validation_accuracy": 0.6012269854545593,
+    "validation_loss": 0.9077860713005066,
+    "test_loss": 0.9324544072151184,
+    "fit_rows": 513,
+    "validation_rows": 163,
+    "max_epochs": 10,
+    "completed_epochs": 10,
+    "selected_epoch": 10
+  },
+  "saved_h5_predictions_match": true,
+  "history_reload_matches": true,
+  "cpu_only": true,
+  "deterministic_ops": true,
+  "seed": 42,
+  "split_seed": 43,
+  "early_stopping_patience": 10,
+  "reduce_lr_patience": 5,
+  "reduce_lr_factor": 0.5,
+  "versions": {
+    "python": "3.12.14",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "h5py": "3.14.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1"
+  },
+  "cv_performed_for_ann": false,
+  "next_experiment": "Same configuration and split; increase only epoch budget to 50",
+  "ai_assistance": "ANN example adaptation, validation setup, plots and verification"
+}

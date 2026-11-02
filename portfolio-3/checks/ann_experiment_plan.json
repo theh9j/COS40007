@@ -1,0 +1,27 @@
+{
+  "student_id": "104999568",
+  "date": "2026-11-01",
+  "purpose": "Two runs specified before the first ANN test evaluation",
+  "architecture": "8 -> Dense64 ReLU -> Dropout0.2 -> Dense32 ReLU -> Dropout0.2 -> Dense16 ReLU -> Dense4 softmax",
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 32,
+  "seed": 42,
+  "validation_recipe_seed": 43,
+  "validation_recipe_fraction": 0.2,
+  "callbacks": {
+    "early_stopping_patience": 10,
+    "reduce_lr_patience": 5,
+    "reduce_lr_factor": 0.5,
+    "monitor": "val_loss",
+    "restore_best_weights": true
+  },
+  "baseline": {
+    "max_epochs": 10
+  },
+  "next_iteration": {
+    "max_epochs": 50
+  },
+  "controlled_change": "Epoch budget only; keep split, initial seed, layers, batch size and callbacks fixed",
+  "selection_rule": "Select saved weights by lowest validation loss, never test performance"
+}

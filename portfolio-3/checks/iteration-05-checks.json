@@ -1,0 +1,84 @@
+{
+  "iteration": 5,
+  "date": "2026-11-01",
+  "name": "Pham Quang Minh",
+  "student_id": "104999568",
+  "source_sha256": "e471719b523703f2d701a1193ee63f3d3c21d929fe727e5c4008a4abd80bc690",
+  "features": [
+    "cement",
+    "slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age"
+  ],
+  "class_names": [
+    "Lower",
+    "Lower-middle",
+    "Upper-middle",
+    "Higher"
+  ],
+  "fit_rows": 513,
+  "validation_rows": 163,
+  "test_rows": 329,
+  "architecture": [
+    64,
+    32,
+    16,
+    4
+  ],
+  "dropout": [
+    0.2,
+    0.2
+  ],
+  "parameter_count": 3252,
+  "seed": 42,
+  "split_seed": 43,
+  "batch_size": 32,
+  "max_epochs": 50,
+  "completed_epochs": 50,
+  "selected_epoch": 50,
+  "same_first_ten_epochs_as_baseline": true,
+  "same_saved_split": true,
+  "same_scaler": true,
+  "only_changed_setting": "Maximum epochs: 10 to 50",
+  "callbacks": {
+    "early_stopping_patience": 10,
+    "reduce_lr_patience": 5,
+    "reduce_lr_factor": 0.5,
+    "monitor": "val_loss",
+    "restore_best_weights": true
+  },
+  "selection_used_test_results": false,
+  "preferred_ann_by_validation_loss": "ANN (up to 50 epochs)",
+  "validation_loss_improvement": 0.25532031059265137,
+  "metrics": {
+    "model": "ANN (up to 50 epochs)",
+    "train_accuracy": 0.8167641162872314,
+    "test_accuracy": 0.756838905775076,
+    "test_f1_weighted": 0.7461763098010853,
+    "validation_accuracy": 0.7239263653755188,
+    "validation_loss": 0.6524657607078552,
+    "test_loss": 0.6023039817810059,
+    "fit_rows": 513,
+    "validation_rows": 163,
+    "max_epochs": 50,
+    "completed_epochs": 50,
+    "selected_epoch": 50
+  },
+  "saved_h5_predictions_match": true,
+  "history_reload_matches": true,
+  "versions": {
+    "python": "3.12.14",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "h5py": "3.14.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1"
+  },
+  "cv_performed_for_ann": false,
+  "ai_assistance": "Controlled experiment implementation, plots and verification"
+}
