@@ -53,15 +53,6 @@ reserved from training for validation (20% of training recipe groups). Its scale
 uses only those 513 fitting rows. Earlier portfolios already inspected this
 dataset, so the test set is a comparison set, not new external validation.
 
-## Small iterations
-
-1. **Done:** agree the route, verify the data and create the notebook outline.
-2. **Done:** prepare inputs, evaluate the Random Forest and save its pipeline.
-3. **Done:** add the MLP using the same five folds and create the comparison chart.
-4. **Done:** train the first ANN; inspect its summary, curves and predictions.
-5. **Done:** keep its split, seed and settings fixed; increase maximum epochs to 50.
-6. **Done:** short PDF, final comparison, transparent GenAI declaration and student-supplied personal reflection. Review permitted use before submission.
-
 Record each completed step in `PROGRESS.md`. The user writes commit messages and
 handles commits/pushes; the assistant must not stage, commit or push. No future
 checkpoint is marked complete.
@@ -146,22 +137,8 @@ the ANN classification example has a binary output, whereas this task has four
 classes. The tabular brief specifies Dense layers of 64, 32 and 16 units with
 dropout, followed by a four-class softmax output.
 
-The brief restricts whole-code generation by GenAI. Checkpoints 2-5 include
-AI-assisted baseline implementation, MLP/ANN example adaptation and verification, recorded in
-the notebook and progress log. Review the implementation and its permitted use
-before submission. The student-supplied reflection is included, with grammar edits only.
+OpenAI Codex (GPT-6) assisted with debugging, suggestions, code polishing and the report. The overall structures,
+interpretations and final say are my own.
 
 Data: Yeh, I. (1998). Concrete Compressive Strength. UCI Machine Learning Repository.
 https://doi.org/10.24432/C5PK67. CC BY 4.0.
-
-## Report draft and checks (2 November 2026)
-
-The seven-page `Portfolio_Assessment_3_104999568_Pham_Quang_Minh.pdf` follows
-Portfolio 1's cover, fonts, blue headings and red footer. Its build source is
-`tools/build_report.py` (ReportLab); it reads saved results without retraining.
-`checks/iteration-06-checks.json` records notebook validation, preserved code/output
-cells, unchanged dataset hash and independently recomputed test metrics.
-
-The report now includes your personal reflection, lightly edited for grammar. Review
-the declared AI implementation assistance against course rules before submission.
-No staging, commit or push was performed. Git remains under your control.

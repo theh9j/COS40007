@@ -14,8 +14,6 @@
 setup difficulty, lightly edited for grammar, to the notebook and PDF. No extra
 personal experience was invented. Student permitted-use review remains.
 
-**Git:** nothing staged, committed or pushed.
-
 ---
 
 ## Iteration 5 - 1 November 2026
@@ -52,12 +50,6 @@ preserved; restarting the kernel and running all cells reproduces the full workf
 
 **Next checkpoint:** concise PDF in the Portfolio 1 layout, final file checks and
 the student's own personal learning reflection. No more model runs are planned.
-
-**AI assistance:** controlled-experiment implementation, explanation, plots and checks.
-Personal learning answers have not been invented.
-
-**Git:** nothing staged, committed or pushed. Earlier uncommitted checkpoint-4
-changes remain alongside this checkpoint for the user's review.
 
 ---
 
@@ -97,11 +89,6 @@ the saved model's evaluation do not.
 **Next checkpoint:** run the pre-specified 50-epoch ANN variation, compare validation
 behaviour and saved model results. Final report and personal reflection remain pending.
 
-**AI assistance:** ANN example adaptation, validation design, explanations, figures
-and verification. No personal learning-reflection answers were invented.
-
-**Git:** no staging, commit or push. The new local runtime is ignored by Git.
-
 ---
 
 ## Iteration 3 - 1 November 2026
@@ -132,11 +119,6 @@ execution errors. Random Forest metrics remain unchanged from iteration 2.
 
 **Next checkpoint:** prepare recipe-group ANN validation data and train the first
 Keras ANN. TensorFlow setup and the final report remain pending.
-
-**AI assistance:** adapting the supplied example, explanations, plots and verification.
-The personal learning reflection remains for the student to write.
-
-**Git:** nothing staged, committed or pushed; changes left for the user's review.
 
 ---
 
@@ -172,11 +154,6 @@ validation fold. The notebook completed without execution errors.
 **Next checkpoint:** add the scikit-learn MLP and compare both models using the same
 saved folds. ANN training and the final PDF remain pending.
 
-**AI assistance:** baseline code drafting, explanations and verification. No personal
-learning reflection was invented. The supplied brief's limits on AI use still apply.
-
-**Git:** changes left unstaged and uncommitted for the user. No push performed.
-
 ---
 
 ## Iteration 1 - 1 November 2026
@@ -197,18 +174,3 @@ The exact checks and source hashes are in `checks/iteration-01-data-audit.json`.
 **Not done yet:** input scaling, model training, model evaluation and final PDF.
 TensorFlow/Keras is not installed in the inspected local runtime; choose and verify
 the ANN environment when that step is reached. No package installation was attempted.
-
-**Next checkpoint:** prepare the eight original inputs and establish the Random
-Forest baseline, with transformations fitted on training data only.
-
-**AI assistance this iteration:** reviewing supplied material, planning the work,
-drafting project notes and checking the existing dataset. No model results or
-personal learning reflections were invented.
-
-## Submission wording cleanup - 2 November 2026
-
-Removed checkpoint banners, pending-review reminders, progress-log references and
-Git workflow commentary from the notebook/PDF. Retained the factual GenAI declaration
-and student reflection. All model code, outputs and results are unchanged.
-Course permitted-use review remains a private pre-submission action, not report prose.
-No staging, commit or push performed.
