@@ -1,0 +1,26 @@
+{
+  "Random Forest": {
+    "test_accuracy": 0.7811550151975684,
+    "test_f1_weighted": 0.780529697499423
+  },
+  "MLP": {
+    "test_accuracy": 0.8206686930091185,
+    "test_f1_weighted": 0.8202975713223062
+  },
+  "ANN (10 epochs)": {
+    "test_accuracy": 0.6231003039513677,
+    "test_f1_weighted": 0.5829924209797082
+  },
+  "ANN (up to 50 epochs)": {
+    "test_accuracy": 0.756838905775076,
+    "test_f1_weighted": 0.7461763098010852
+  },
+  "notebook_valid": true,
+  "code_cells_unchanged": true,
+  "executed_code_cells": 20,
+  "dataset_hash_unchanged": true,
+  "pdf_pages": 7,
+  "visual_review": "All seven rendered pages inspected",
+  "personal_reflection": "student supplied; lightly edited for grammar",
+  "training_rerun": false
+}

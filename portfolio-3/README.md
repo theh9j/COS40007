@@ -6,7 +6,7 @@ GitHub: https://github.com/theh9j/COS40007
 
 ## Current checkpoint
 
-Iteration 5: both traditional baselines and both planned ANN runs are complete.
+Iteration 6: four model runs, final interpretation and the seven-page PDF review draft are ready.
 
 | Model | Test accuracy | Weighted F1 | Mean CV accuracy |
 | --- | ---: | ---: | ---: |
@@ -20,7 +20,7 @@ MLP is the current traditional baseline selected by CV accuracy. All six MLP fit
 The warnings are recorded; these fixed baseline settings were not tuned using
 test scores. The 50-epoch ANN has 72.4% validation accuracy and test loss 0.602.
 It is preferred over the 10-epoch ANN by validation loss, but the MLP retains the
-highest observed test accuracy. The final report and personal reflection are pending.
+highest observed test accuracy. The report is drafted and checked; the student-supplied reflection is included and student permitted-use review remains pending.
 
 ## Chosen direction
 
@@ -60,7 +60,7 @@ dataset, so the test set is a comparison set, not new external validation.
 3. **Done:** add the MLP using the same five folds and create the comparison chart.
 4. **Done:** train the first ANN; inspect its summary, curves and predictions.
 5. **Done:** keep its split, seed and settings fixed; increase maximum epochs to 50.
-6. Write a short report, final comparison and honest GenAI reflection.
+6. **Done:** short PDF, final comparison, transparent GenAI declaration and student-supplied personal reflection. Review permitted use before submission.
 
 Record each completed step in `PROGRESS.md`. The user writes commit messages and
 handles commits/pushes; the assistant must not stage, commit or push. No future
@@ -130,7 +130,7 @@ epochs reproduce the baseline history. Validation loss improved from 0.908 to
 0.652 and test accuracy rose by 13.4 percentage points. No extra settings were tried
 after inspecting these test results. Earlier model files and results are preserved.
 
-## Deliverables to build
+## Deliverables and final review
 
 - One notebook: `Portfolio_Assessment_3_104999568_Pham_Quang_Minh.ipynb`.
 - One concise PDF with the Portfolio 1 cover style, student ID and GitHub link.
@@ -149,7 +149,19 @@ dropout, followed by a four-class softmax output.
 The brief restricts whole-code generation by GenAI. Checkpoints 2-5 include
 AI-assisted baseline implementation, MLP/ANN example adaptation and verification, recorded in
 the notebook and progress log. Review the implementation and its permitted use
-before submission. Personal learning reflections remain for the student to write.
+before submission. The student-supplied reflection is included, with grammar edits only.
 
 Data: Yeh, I. (1998). Concrete Compressive Strength. UCI Machine Learning Repository.
 https://doi.org/10.24432/C5PK67. CC BY 4.0.
+
+## Report draft and checks (2 November 2026)
+
+The seven-page `Portfolio_Assessment_3_104999568_Pham_Quang_Minh.pdf` follows
+Portfolio 1's cover, fonts, blue headings and red footer. Its build source is
+`tools/build_report.py` (ReportLab); it reads saved results without retraining.
+`checks/iteration-06-checks.json` records notebook validation, preserved code/output
+cells, unchanged dataset hash and independently recomputed test metrics.
+
+The report now includes your personal reflection, lightly edited for grammar. Review
+the declared AI implementation assistance against course rules before submission.
+No staging, commit or push was performed. Git remains under your control.

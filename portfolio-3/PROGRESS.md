@@ -1,5 +1,23 @@
 # Progress
 
+## Iteration 6 - 2 November 2026
+
+- Created a seven-page PDF review draft in Portfolio 1 style, with simple explanations.
+- Added the final comparison, ANN curves, architecture, confusion matrix and references.
+- Declared implementation/reporting assistance honestly; no personal experience invented.
+- Updated notebook conclusions and removed stale future-checkpoint wording.
+- Preserved all 20 executed code cells and their outputs; no retraining.
+- Validated notebook structure, dataset hash, all four test accuracy/F1 scores and all rendered PDF pages.
+- Added a reproducible PDF builder and final check record.
+
+**Reflection update (2 November):** added the student-supplied account of the ANN
+setup difficulty, lightly edited for grammar, to the notebook and PDF. No extra
+personal experience was invented. Student permitted-use review remains.
+
+**Git:** nothing staged, committed or pushed.
+
+---
+
 ## Iteration 5 - 1 November 2026
 
 **Completed**
@@ -186,3 +204,11 @@ Forest baseline, with transformations fitted on training data only.
 **AI assistance this iteration:** reviewing supplied material, planning the work,
 drafting project notes and checking the existing dataset. No model results or
 personal learning reflections were invented.
+
+## Submission wording cleanup - 2 November 2026
+
+Removed checkpoint banners, pending-review reminders, progress-log references and
+Git workflow commentary from the notebook/PDF. Retained the factual GenAI declaration
+and student reflection. All model code, outputs and results are unchanged.
+Course permitted-use review remains a private pre-submission action, not report prose.
+No staging, commit or push performed.
